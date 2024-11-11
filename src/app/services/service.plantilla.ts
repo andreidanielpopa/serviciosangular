@@ -13,8 +13,21 @@ export class ServicePlantilla {
         return this._http.get(url);
     }
 
-    getFuncionPlantilla(funcion:string): Observable<any> {
+    getFuncionPlantilla(funcion: string): Observable<any> {
         let request = '/api/Plantilla/PlantillaFuncion/' + funcion;
+        let url = environment.urlApiPlantilla + request;
+
+        return this._http.get(url);
+    }
+
+    getPlantillFunciones(funciones: Array<string>): Observable<any> {
+        let data = '';
+        for (var funcion of funciones) {
+            data += 'funcion=' + funcion + '&';
+        }
+        data = data.substring(0, data.length - 1);
+
+        let request = 'api/plantilla/plantillafunciones?' + data;
         let url = environment.urlApiPlantilla + request;
 
         return this._http.get(url);

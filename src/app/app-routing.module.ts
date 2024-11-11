@@ -4,6 +4,7 @@ import { PersonasComponent } from './components/personas/personas.component';
 import { ComicsPadreComponent } from './components/comics-padre/comics-padre.component';
 import { CochesComponent } from './components/coches/coches.component';
 import { PlantillaFuncionSimpleComponent } from './components/plantilla-funcion-simple/plantilla-funcion-simple.component';
+import { PlantillaFuncionMultipleComponent } from './components/plantilla-funcion-multiple/plantilla-funcion-multiple.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path:'plantilla', component:PlantillaFuncionSimpleComponent
+  },
+  {
+    path:'plantillamultiple', component:PlantillaFuncionMultipleComponent
   },
 ];
 

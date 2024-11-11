@@ -16,6 +16,7 @@ import { ServiceCoches } from './services/service.coches';
 import { CochesComponent } from './components/coches/coches.component';
 import { PlantillaFuncionSimpleComponent } from './components/plantilla-funcion-simple/plantilla-funcion-simple.component';
 import { ServicePlantilla } from './services/service.plantilla';
+import { PlantillaFuncionMultipleComponent } from './components/plantilla-funcion-multiple/plantilla-funcion-multiple.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ServicePlantilla } from './services/service.plantilla';
     MenuComponent,
     CochesComponent,
     PlantillaFuncionSimpleComponent,
+    PlantillaFuncionMultipleComponent,
   ],
   imports: [
     BrowserModule,
