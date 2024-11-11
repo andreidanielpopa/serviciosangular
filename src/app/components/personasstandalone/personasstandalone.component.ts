@@ -1,13 +1,17 @@
 import { Persona } from './../../models/persona';
 import { Component, OnInit } from '@angular/core';
 import { ServicePersonas } from '../../services/service.persona';
+import { NgFor, NgIf } from '@angular/common';
+
 
 @Component({
-  selector: 'app-personas',
-  templateUrl: './personas.component.html',
-  styleUrl: './personas.component.css'
+  selector: 'app-personasstandalone',
+  templateUrl: './personasstandalone.component.html',
+  styleUrl: './personasstandalone.component.css',
+  standalone: true,
+  imports: [NgFor, NgIf]
 })
-export class PersonasComponent implements OnInit {
+export class PersonasstandaloneComponent implements OnInit {
 
   public personas!: Array<Persona>;
 
